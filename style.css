@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #f3eae3;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.card-txt{
+    max-width: 300px;
+    padding: 2rem 2rem;
+}
+.card-txt .heading-txt{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+.card-txt h2{
+    margin-bottom: 30px;
+    font-family: "Unna" , serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5rem;
+}
+.card-txt p{
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 15px;
+}
+.card-txt .pricing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.card-txt .pricing .span1{
+    color: #3d8168;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Unna" , serif;
+}
+.card img{
+    width: 300px;
+    height: 450px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.card .img-mobile {
+    display: none;
+}
+.card a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+}
+.card a .bx{
+    font-size: 25px;
+    margin-right: 8px;
+}
+.card .btn{
+    background-color: #3d8168;
+    color: #fff;
+    width: 230px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: "Poppins";
+}
+.card .btn:hover{
+    background-color: #204a3b;
+
+}
+
+
+@media (max-width:600px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .card img{
+        display: none;
+    }
+    .card .img-mobile {
+        display: block;
+        width: 300px;
+        height: auto;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+    .card-txt h2{
+        margin-bottom: 12px;
+    }
+    .card-txt p{
+        margin-bottom: 12px;
+    }
+    .card-txt span{
+        margin-bottom: 12px;
+    }
+
+}
